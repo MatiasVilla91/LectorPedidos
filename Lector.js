@@ -19,6 +19,9 @@ const LectorFarmacia = () => {
   const handleEnviar = () => {
     alert(`Número enviado: ${numero}`);
     resaltarCelda(numero);
+    inputNumeroRef.current.focus(); // Establecer el foco en el input después de la búsqueda
+    setNumero(''); // Limpiar el campo del input
+  };
   };
 
   const handleArchivoSeleccionado = (event) => {
